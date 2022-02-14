@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".header-modal"),document.querySelector(".overlay"),document.querySelector(".header-modal-button")})();
