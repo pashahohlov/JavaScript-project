@@ -24,7 +24,7 @@ const timer = () => {
             timerHours.textContent = getTime.hours < 10 ? '0' + getTime.hours : getTime.hours;
             timerMinutes.textContent = getTime.minutes < 10 ? '0' + getTime.minutes : getTime.minutes;
             timerSeconds.textContent = getTime.seconds < 10 ? '0' + getTime.seconds : getTime.seconds;
-            
+
             if (getTime.timeRemaining > 0) {
                 setTimeout(updateClock, 1000)
             }
