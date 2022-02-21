@@ -13,7 +13,7 @@ const timer = () => {
     }
 
     const updateClock = () => {
-        let getTime = getTimeRemaining('20 february 2022')
+        let getTime = getTimeRemaining('28 february 2022')
         timerBlocks.forEach(timerBlock => {
             const timerDays = timerBlock.querySelector('#days')
             const timerHours = timerBlock.querySelector('#hours')
@@ -31,8 +31,6 @@ const timer = () => {
         })
 
     }
-
-    
     updateClock()
 }
 
