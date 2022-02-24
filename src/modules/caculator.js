@@ -1,4 +1,4 @@
-const calculator = (price = 1000) => {
+const calculator = () => {
     const calcBlock = document.querySelector('#calc')
     const calcType = document.querySelector('#calc-type')
     const calcTypeMaterial = document.querySelector('#calc-type-material')
@@ -12,12 +12,13 @@ const calculator = (price = 1000) => {
         let calcTotalValue = 0
 
         if (calcType.value && calcTypeMaterial.value && calcSquare.value) {
-            calcTotalValue = price * calcTypeValue * calcTypeMaterialValue * calcSquareValue
+            calcTotalValue = calcTypeValue * calcTypeMaterialValue * calcSquareValue
         } else {
             calcTotalValue = 0
         }
 
-        calcTotal.textContent = calcTotalValue
+        calcTotal.value = calcTotalValue
+        console.log(calcTotalValue);
     }
 
     calcBlock.addEventListener('input', (e) => {
