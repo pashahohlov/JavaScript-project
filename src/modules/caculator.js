@@ -18,7 +18,6 @@ const calculator = () => {
         }
 
         calcTotal.value = calcTotalValue
-        console.log(calcTotalValue);
     }
 
     calcBlock.addEventListener('input', (e) => {
